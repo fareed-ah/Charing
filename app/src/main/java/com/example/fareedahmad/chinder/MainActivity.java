@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     public void signin(View view) {
 
         
-
     }
     public void signup(View view){
 
