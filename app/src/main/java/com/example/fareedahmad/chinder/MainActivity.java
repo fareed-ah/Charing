@@ -15,10 +15,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void signin(View view) {
 
-        
-
     }
+
     public void signup(View view){
 
+    }
+
+    public void login(View view){
+        //Intent intent = new Intent(this, )
     }
 }
