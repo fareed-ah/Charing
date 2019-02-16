@@ -1,8 +1,13 @@
 package com.example.fareedahmad.chinder;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+
+
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,14 +19,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void signin(View view) {
-
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        EditText editText = findViewById(R.id.editText);
+        String message = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
     }
 
     public void signup(View view){
 
-    }
-
-    public void login(View view){
-        //Intent intent = new Intent(this, )
     }
 }
