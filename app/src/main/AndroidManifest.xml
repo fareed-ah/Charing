@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.signin.SignInActivity"></activity>
+        <activity android:name=".ui.donor.DonorActivity"></activity>
+        <activity android:name=".ui.signin.SignInActivity" />
         <activity android:name=".ButtonListenerExample" />
         <activity android:name=".ui.signup.SignUpActivity" />
         <activity android:name=".ui.main.MainActivity">
