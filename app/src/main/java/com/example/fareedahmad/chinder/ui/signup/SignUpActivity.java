@@ -1,9 +1,12 @@
-package com.example.fareedahmad.chinder;
+package com.example.fareedahmad.chinder.ui.signup;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.fareedahmad.chinder.R;
+import com.example.fareedahmad.chinder.ui.signin.SignInActivity;
 
 public class SignUpActivity extends AppCompatActivity {
 
