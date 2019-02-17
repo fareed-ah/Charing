@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void signup(View view){
-        Intent intent = new Intent(this, SignInActivity.class);
+        Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
     }
 }
