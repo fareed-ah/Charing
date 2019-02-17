@@ -7,6 +7,8 @@ import java.util.List;
 
 import io.reactivex.Single;
 import okhttp3.OkHttpClient;
+import okhttp3.RequestBody;
+import okhttp3.ResponseBody;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -19,5 +21,7 @@ public class NetworkManager {
             .build()
             .create(CharingApiService.class);
 
-    public Single<List<Organization>> getCollections(){return charingApiService.getOrganizations();}
+    public Single<List<Organization>> getCollections(String name){return charingApiService.getOrganizations(name);}
+
+    public Single<ResponseBody> register(RequestBody params){return charingApiService.register(params);}
 }
