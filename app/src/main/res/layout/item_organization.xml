@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="organization"
+            type="com.example.fareedahmad.chinder.model.Organization" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/organizationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@{organization.name}"
+            tools:text="Product Title"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/organizationTag"
+            android:layout_below="@+id/organizationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@{organization.tagsString}"
+            tools:text="Collection"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/donateBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text= "Donate"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</layout>
