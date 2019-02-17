@@ -63,6 +63,9 @@ fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
 
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
 *.iml
 .gradle
 /local.properties
