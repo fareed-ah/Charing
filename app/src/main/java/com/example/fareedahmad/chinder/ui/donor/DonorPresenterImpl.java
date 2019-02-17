@@ -26,7 +26,7 @@ public class DonorPresenterImpl implements DonorContract.Presenter {
 
     @Override
     public void getOrganization() {
-        networkManager.getCollections()
+        networkManager.getCollections(null)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new SingleObserver<List<Organization>>() {
@@ -43,7 +43,7 @@ public class DonorPresenterImpl implements DonorContract.Presenter {
 
                     @Override
                     public void onError(Throwable e) {
-
+                        Log.d("ERROR", "onError: " + e.getMessage());
                     }
                 });
     }

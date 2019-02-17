@@ -43,7 +43,7 @@ public class Organization {
     public String getTagsString() {
         String tags = "";
         for (String tag:tag) {
-            tags += " tag";
+            tags += tag;
         }
         return tags;
     }
