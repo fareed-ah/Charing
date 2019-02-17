@@ -10,6 +10,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.fareedahmad.chinder.R;
+import com.example.fareedahmad.chinder.ui.donor.DonorActivity;
 import com.example.fareedahmad.chinder.ui.signin.SignInActivity;
 
 import java.util.ArrayList;
@@ -48,11 +49,6 @@ public class SignUpActivity extends AppCompatActivity implements AdapterView.OnI
         spinner.setAdapter(dataAdapter);
     }
 
-    public void signin(View view) {
-        Intent intent = new Intent(this, SignInActivity.class);
-        startActivity(intent);
-    }
-
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         // On selecting a spinner item
@@ -62,5 +58,15 @@ public class SignUpActivity extends AppCompatActivity implements AdapterView.OnI
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
+    }
+
+    public void signup(View view) {
+        if(userType.equals("Donor")){
+            //TODO launch donor screen
+            Intent intent = new Intent(this, DonorActivity.class);
+            startActivity(intent);
+        }else if(userType.equals("Organization")){
+            //TODO launch organization screen
+        }
     }
 }
